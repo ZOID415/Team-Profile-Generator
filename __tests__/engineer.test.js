@@ -1,4 +1,4 @@
-const Engineer = require("../lib/engineer");
+const Engineer = require("./lib/engineer");
 
 describe("Engineer values", () => {
   it("Should give you back the name entered into the class", () => {
