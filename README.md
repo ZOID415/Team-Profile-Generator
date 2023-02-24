@@ -33,7 +33,7 @@ This project is licensed under the MIT license.
 
 ## Questions
 
-If you have any questions about this project or repositorie you may contact me at michaelalfaro93@gmail.com. If you are interested you may visit my other work at [dependancy. The project shows the use of tests using Jest](https://github.com/dependancy. The project shows the use of tests using Jest/).
+If you have any questions about this project or repositorie you may contact me at michaelalfaro93@gmail.com. If you are interested you may visit my other work at https://github.com/ZOID415.
 
 ## Demo
 
