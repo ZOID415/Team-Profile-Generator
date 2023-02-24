@@ -5,7 +5,7 @@ const Manager = require("./lib/manager");
 const Intern = require("./lib/intern");
 const Engineer = require("./lib/engineer");
 const path = require("path");
-const { generateManager, generateEngineer } = require("./src/page-template");
+const { generateManager, generateEngineer, generateIntern } = require("./src/page-template");
 
 const DIST_DIR = path.resolve(__dirname, "dist");
 const distPath = path.join(DIST_DIR, "team.html");
@@ -221,16 +221,7 @@ function addIntern() {
       let intSchool = newInt.getSchool();
       let role = newInt.getRole();
 
-      var card = `<!--Card-->
-            <article class="container shadow-md bg-blue-100 rounded-lg text-center">
-            <div class="bg-blue-900 rounded-t-lg py-2 capitalize">
-            <h1 class="text-3xl text-white font-semibold">${intName}</h1>
-            <h2 class="text-lg text-slate-300">ID: ${intID}</h2>
-            </div>
-            <div class="ml-3 m-2 text-xl font-semibold">${role}</div>
-            <div class="ml-3 mb-2 hover:text-blue-700 hover:font-semibold"><a href = "mailto: ${intEmail}">${intEmail}</a></div>
-            <div class="ml-3 mb-3">Education: ${intSchool}</div>
-            </article>`;
+      var card = generateIntern(newInt)
 
       //Add new card to htmlCards string
       htmlCards += card;

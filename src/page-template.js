@@ -25,16 +25,17 @@
             </article>`;}
 
             const generateIntern = intern => {
-        return `<!--Card-->
-            <article class="container shadow-md bg-blue-100 rounded-lg text-center">
+              return `<!--Card-->
+             <article class="container shadow-md bg-blue-100 rounded-lg text-center">
             <div class="bg-blue-900 rounded-t-lg py-2 capitalize">
-            <h1 class="text-3xl text-white font-semibold">${manager.getName()}</h1>
-            <h2 class="text-lg text-slate-300">ID: ${intID}</h2>
+            <h1 class="text-3xl text-white font-semibold">${intern.getName()}</h1>
+            <h2 class="text-lg text-slate-300">ID: ${intern.getId()}</h2>
             </div>
-            <div class="ml-3 m-2 text-xl font-semibold">${role}</div>
-            <div class="ml-3 mb-2 hover:text-blue-700 hover:font-semibold"><a href = "mailto: ${intEmail}">${intEmail}</a></div>
-            <div class="ml-3 mb-3">Education: ${intSchool}</div>
-            </article>`;}
+            <div class="ml-3 m-2 text-xl font-semibold">${intern.getRole()}</div>
+            <div class="ml-3 mb-2 hover:text-blue-700 hover:font-semibold"><a href = "mailto: ${intern.getEmail()}">${intern.getEmail()}</a></div>
+            <div class="ml-3 mb-3">School: ${intern.getSchool()}</div>
+            </article>`;
+            }
 
            
 
