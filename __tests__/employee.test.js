@@ -1,4 +1,4 @@
-const Employee = require("./lib/employee");
+const Employee = require("../lib/employee");
 
 describe("All employee values", () => {
   it("Should give you back the name entered into the class", () => {
